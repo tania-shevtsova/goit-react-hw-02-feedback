@@ -3,10 +3,8 @@ import PropTypes from "prop-types";
 
 const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
-      <>
-    <h2>
-    Please leave feedback
-    </h2>
+    <>
+      <h2>Please leave feedback</h2>
       <button name="good" type="submit" onClick={onLeaveFeedback}>
         Good
       </button>
@@ -15,16 +13,14 @@ const FeedbackOptions = ({ onLeaveFeedback }) => {
       </button>
       <button name="bad" type="submit" onClick={onLeaveFeedback}>
         Bad
-      </button>  
+      </button>
       <h2>Statistics</h2>
-
-      </>
-   
+    </>
   );
 };
 
 export default FeedbackOptions;
 
-FeedbackOptions.propTypes={
-    onLeaveFeedback: PropTypes.func.isRequired
-}
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired
+};
